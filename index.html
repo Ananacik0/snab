@@ -12,8 +12,9 @@
 <body>
     <div class="container">
         <header class="haeder">
-            <a href="" class="logo">
-                <img src="" alt="" class="logo__image">
+            <a href="#cover" class="logo">
+                <img src="./images/logo.svg" alt="logo" class="logo__image">
+                <span>СНАБ-ЮГ</span>
             </a>
             <nav class="navigation">
                 <li class="navigation__item">
@@ -33,7 +34,53 @@
                 </li>
             </nav>
         </header>
-        <section class="cover" id="cover"></section>
+        <section class="cover" id="cover">
+            <img src="./images/cover__background.png" alt="backgroundCover" class="cover__background">
+            <div class="cover__content">
+                <span class="cover__title">Снаб-Юг</span>
+                <h2 class="cover__description">
+                    Оптовая поставка промышленного оборудования и комплектующих для предприятий Юга России.
+                </h2>
+                <div class="cover__button">
+                    <a href="./catalog.html" class="cover__catalog--btn">Каталог</a>
+                    <a href="./contacts.html" class="cover__contacts--btn">Контакты</a>
+                    <input class="cover__search" type="text" placeholder="Поиск">
+                </div>
+                <div class="cover__messenger">
+                    <a href="" class="cover__tg">
+                        <img src="./images/cover__tg.svg" alt="tg">
+                        <span>Telegram</span>
+                    </a>
+                    <a href="" class="cover__ma">
+                        <img src="./images/cover__wa.svg" alt="wa">
+                        <span>WhatsApp</span>
+                    </a>
+                </div>
+                <ul class="cover__contacts">
+                    <li class="cover__contacts--item">
+                        <img src="./images/cover__phone.svg" alt="phone" class="cover__contacts--phone">
+                        <div class="cover__phone--text">
+                            <span>Телефон</span>
+                            <p>+7 (952) 600-05-39</p>
+                        </div>
+                    </li>
+                    <li class="cover__contacts--item">
+                        <img src="./images/cover__email.svg" alt="email" class="cover__contacts--phone">
+                        <div class="cover__phone--text">
+                            <span>Почта</span>
+                            <p>ug-snab61@ya.ru</p>
+                        </div>
+                    </li>
+                    <li class="cover__contacts--item">
+                        <img src="./images/cover__messanger.svg" alt="messanger" class="cover__contacts--phone">
+                        <div class="cover__phone--text">
+                            <span>Мессенджеры</span>
+                            <p>+7 (952) 600-05-39</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
         <section class="background" id="background"></section>
         <section class="solutions" id="solutions"></section>
         <section class="about" id="about"></section>
@@ -67,8 +114,28 @@
                         </li>
                     </ul>
                 </li>
-                <li class="footer__navigation"></li>
-                <li class="footer__logo"></li>
+                <li class="footer__navigation">
+                    <ul class="footer__navigation--list">
+                        <li class="footer__navigation--item">
+                            <a href="#cover" class="footer__navigation--link">Главная</a>
+                        </li>
+                        <li class="footer__navigation--item">
+                            <a href="#background" class="footer__navigation--link">Фундамент</a>
+                        </li>
+                        <li class="footer__navigation--item">
+                            <a href="#solutions" class="footer__navigation--link">Предложения</a>
+                        </li>
+                        <li class="footer__navigation--item">
+                            <a href="#about" class="footer__navigation--link">О нас</a>
+                        </li>
+                        <li class="footer__navigation--item">
+                            <a href="#reviews" class="footer__navigation--link">Отзывы</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="footer__logo">
+                    <img src="./images/logo.svg" alt="logo">
+                </li>
             </ul>
         </footer>
     </div>

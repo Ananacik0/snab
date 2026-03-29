@@ -7,24 +7,23 @@
     <meta name="keywords" content="оборудование, промышленное оборудование, для предприятий, оборудование для предприятий">
     <link rel="icon" href="./images/favicon.svg" type="image/svg">
     <link rel="stylesheet" href="./style.css">
-    <title>СНАБ-Юг | Промышленное оборудование и компелектующие</title>
+    <title>Снаб-Юг | Промышленное оборудование и компелектующие</title>
 </head>
 <body>
     <div class="container">
         <header class="header">
             <a href="#cover" class="logo">
                 <img src="./images/logo.svg" alt="logo" class="logo__image">
-                <span>СНАБ-ЮГ</span>
             </a>
             <nav class="navigation">
                 <li class="navigation__item">
                     <a href="#cover" class="navigation__link">Главная</a>
                 </li>
                 <li class="navigation__item">
-                    <a href="#background" class="navigation__link">Фундамент</a>
+                    <a href="./catalog.html" class="navigation__link">Каталог</a>
                 </li>
                 <li class="navigation__item">
-                    <a href="#solutions" class="navigation__link">Предложения</a>
+                    <a href="./contacts.html" class="navigation__link">Контакты</a>
                 </li>
                 <li class="navigation__item">
                     <a href="#about" class="navigation__link">О нас</a>
@@ -33,6 +32,7 @@
                     <a href="#reviews" class="navigation__link">Отзывы</a>
                 </li>
             </nav>
+            <button class="header__button">Обратная связь</button>
         </header>
         <section class="cover" id="cover">
             <img src="./images/cover__background.png" alt="backgroundCover" class="cover__background">
@@ -42,19 +42,18 @@
                     Оптовая поставка промышленного оборудования и комплектующих для предприятий Юга России.
                 </h2>
                 <div class="cover__button">
-                    <a href="./catalog.html" class="cover__catalog--btn">Каталог</a>
+                    <button class="cover__catalog--btn">Каталог</button>
                     <a href="./contacts.html" class="cover__contacts--btn">Контакты</a>
-                    <input class="cover__search" type="text" placeholder="Поиск">
                 </div>
                 <div class="cover__messenger">
                     <a href="" class="cover__tg">
                         <img src="./images/cover__tg.svg" alt="tg">
                         <span>Telegram</span>
                     </a>
-                    <a href="" class="cover__ma">
+                    <!-- <a href="" class="cover__ma">
                         <img src="./images/cover__wa.svg" alt="wa">
                         <span>WhatsApp</span>
-                    </a>
+                    </a> -->
                 </div>
                 <ul class="cover__contacts">
                     <li class="cover__contacts--item">
@@ -125,13 +124,13 @@
             <div class="solutions__catalog">
                 <h1 class="solutions__title">Комплексные решения</h1>
                 <h2 class="solutions__second">Полный цикл поставок для вашего строительного проекта</h2>
-                <a href="#" class="solutions__button">
+                <a href="./catalog.html" class="solutions__button">
                     <img src="./images/box.svg" alt="box" class="solutions__icon">
                     <p class="solutions__text">Перейти в полный каталог</p>
                 </a>
             </div>
             <ul class="solutions__list">
-                <li class="solutions__item">
+                <li class="solutions__item" id>
                     <img src="./images/lightning.svg" alt="lightning" class="solutions__pic">
                     <span>Электротехника</span>
                     <p>Кабели, провода,
@@ -295,6 +294,17 @@
             </ul>
         </footer>
     </div>
-    <script src="./app.js"></script>
+    <div class="window">
+        <div class="modalWindow">
+            <div class="modal__close">
+                <div class="modal__close-f"></div>
+                <div class="modal__close-s"></div>
+            </div>
+            <div class="modal__content">
+            </div>
+        </div>
+    </div>
+    <script src="./app.js" defer></script>
 </body>
 </html>
+

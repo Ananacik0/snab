@@ -55,6 +55,7 @@
     .navigation {
         display: flex;
         gap: .5rem;
+        margin-right: auto;
         && > li > a {
             font-size: var(--s-title);
             color: var(--beige);
@@ -104,7 +105,8 @@
     border-radius: 8px;
     color: var(--white);
     transition: .3s;
-    font-weight: 600;
+    font-size: var(--s-title);
+    font-weight: var(--sw-title);
 }
 
 .header__button:hover {
@@ -589,13 +591,17 @@ body {
     }
 }
 
+.footer__content {
+    align-items: center;
+}
+
 .footer__navigation--list {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     && > li > a {
         color: var(--white);
-        font-size: 20px;
+        font-size: 16px;
     }
 }
 
